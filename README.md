@@ -4,7 +4,7 @@
 ** Exposition exercise **
 *************************
 
-Author: Omaro Y.S.Schreuder januari 2025
+Author: Omaro Y.S.Schreuder februari 2025
 
 This app is still under development. 
 It is intented as a demonstration to exposition of my abiliity.
