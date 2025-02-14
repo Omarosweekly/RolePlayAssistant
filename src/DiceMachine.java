@@ -3,14 +3,15 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class DiceMachine {
-    public int roll(int diceSides, int diceAmount) {
+    public ArrayList<Integer> roll(int diceSides, int diceAmount) {
+        ArrayList<Integer> rollList = new ArrayList<>();
         int result = 0;
-        int amountRolls = 0;
-        while (!(diceAmount == amountRolls)) {
-            amountRolls++;
-            diceRoll(diceSides);
+        int currentRolls = 0;
+        while (!(diceAmount == currentRolls)) {
+            currentRolls++;
+            rollList.add(diceRoll(diceSides));
         }
-        return result;
+        return rollList;
     }
 
     public int finalResult(Array list, String inputTypeRoll) {
@@ -25,6 +26,7 @@ public class DiceMachine {
                 }
             }
         }
+        
         if (checkInput == TypeRoll.Disadvantage){
             for (int i : list) {
                 if (i < list.get(index)) {
@@ -35,8 +37,9 @@ public class DiceMachine {
         } return tmp;
     }
 
-    private void diceRoll(int diceSides) {
+    private int diceRoll(int diceSides) {
         Random rollResult = new Random(diceSides);
         rollResult.nextInt();
+        return diceSides;
     }
 }
