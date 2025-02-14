@@ -6,6 +6,7 @@ public class CheckInput {
         for (DiceShape query : DiceShape.values())
             if (query.getSides() == input) {
                 result = true;
+                break;
             }
         return result;
     }

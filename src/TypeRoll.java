@@ -1,4 +1,4 @@
 public enum TypeRoll {
-    Advantage,
-    Disadvantage
+    ADVANTAGE,
+    DISADVANTAGE
 }

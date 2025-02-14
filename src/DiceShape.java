@@ -43,7 +43,9 @@ public enum DiceShape {
     public int getSides() {
         return sides - 1;
     }
-
-
+@Override
+    public String toString() {
+    return getMsg();
+}
 
 }
