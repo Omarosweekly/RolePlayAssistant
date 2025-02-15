@@ -49,6 +49,6 @@ public class DiceMachine {
 
     private int diceRoll(int diceSides) {
         Random rollResult = new Random();
-        return rollResult.nextInt(diceSides+1); // Called in the roll method
+        return rollResult.nextInt(diceSides); // Called in the roll method
     }
 }
